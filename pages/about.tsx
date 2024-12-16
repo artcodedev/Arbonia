@@ -17,7 +17,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
   return (
     <Box>
 
-      
+
       <PageTitle
         header={"Специализированный магазин Arbonia в России"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
@@ -26,30 +26,17 @@ const PageAbout: NextPage<PageAboutProps> = () => {
           { title: "О магазине", link: "/about" },
         ]}
       />
+
       <PageHeader title={"О магазине радиаторов Arbonia"} />
-      <Hero
-        imgPath={"/images/sliders/slide.jpeg"}
-        header={"О магазине"}
-      />
-      <Box
-        sx={{ ...global.pagePadding }}
-        marginTop="20px"
+
+      <Hero imgPath={"/images/sliders/slide.jpeg"} header={"О магазине"} />
+
+      <Box sx={{ ...global.pagePadding }} marginTop="20px"
       >
         <Box>
-          <Grid
-            container
-            spacing={2}
-          >
-            <Grid
-              item
-              xs={12}
-              md={7}
-              lg={6}
-            >
-              <Typography
-                sx={{ ...styles.standardText }}
-                component={"span"}
-              >
+          <Grid container spacing={2} >
+            <Grid item xs={12} md={7} lg={6}>
+              <Typography sx={{ ...styles.standardText }} component={"span"} >
                 Наша компания специализируется на отопительном оборудовании
                 премиум-класса: стальные трубчатые радиаторы, внутрипольные
                 конвекторы, дизайн-радиаторы и чугунные ретро-радиаторы. Мы
@@ -74,85 +61,56 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 (Деловые Линии, Возовоз, Байкал-Сервис и др).
               </Typography>
             </Grid>
-            <Grid
-              item
-              xs={12}
-              md={1}
-              lg={1}
-            >
+
+            <Grid item xs={12} md={1} lg={1} >
               <Divider orientation="vertical" />
             </Grid>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              lg={3}
-            >
+
+
+            <Grid item xs={12} md={4} lg={3} >
               <Box>
                 <Typography sx={{ ...styles.standardTextBold }}>
                   Контактная информация
                 </Typography>
               </Box>
               <Box marginTop="20px">
-                <Typography
-                  sx={{ ...styles.smallTextBold }}
-                  display="inline"
-                >
+
+                <Typography sx={{ ...styles.smallTextBold }} display="inline" >
                   тел.:&nbsp;
                 </Typography>
+
                 <Link href={`tel:${global.phone495}`}>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    // onClick={() => trackEvent("phone_click")}
-                  >
-                    <Typography
-                      sx={{ ...styles.standardTextLink }}
-                      display="inline"
-                    >
+                  <a style={{ textDecoration: "none" }} >
+
+                    <Typography sx={{ ...styles.standardTextLink }} display="inline" >
                       {global.phone495String}
                     </Typography>
                   </a>
                 </Link>
                 <br />
-                <Typography
-                  sx={{ ...styles.smallTextBold, color: "#ffffff" }}
-                  display="inline"
-                >
+                <Typography sx={{ ...styles.smallTextBold, color: "#ffffff" }} display="inline">
                   тел.:&nbsp;
                 </Typography>
+
                 <Link href={`tel:${global.phone812}`}>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    // onClick={() => trackEvent("phone_click")}
-                  >
-                    <Typography
-                      sx={{ ...styles.standardTextLink }}
-                      display="inline"
-                    >
-                      {global.phone812String}
-                    </Typography>
-                  </a>
+                  <Typography sx={{ ...styles.standardTextLink }} display="inline">
+                    {global.phone812String}
+                  </Typography>
                 </Link>
+
               </Box>
               <Box>
-                <Typography
-                  sx={{ ...styles.smallTextBold }}
-                  display="inline"
-                >
+
+                <Typography sx={{ ...styles.smallTextBold }} display="inline" >
                   email:&nbsp;
                 </Typography>
+
                 <Link href={`mailto:${global.email}`}>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    // onClick={() => trackEvent("email_click")}
+                  <Typography sx={{ ...styles.standardTextLink }} display="inline"
                   >
-                    <Typography
-                      sx={{ ...styles.standardTextLink }}
-                      display="inline"
-                    >
-                      {global.email}
-                    </Typography>
-                  </a>
+                    {global.email}
+                  </Typography>
+
                 </Link>
               </Box>
 
@@ -164,52 +122,50 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                   whatsapp:&nbsp;
                 </Typography>
                 <Link href={`https://wa.me/${global.whatsApp}`}>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    // onClick={() => trackEvent("whatsapp_click")}
-                  >
-                    <Typography
-                      sx={{ ...styles.standardTextLink }}
-                      display="inline"
-                    >
-                      {global.whatsAppString}
-                    </Typography>
-                  </a>
+
+                  <Typography sx={{ ...styles.standardTextLink }} display="inline" >
+                    {global.whatsAppString}
+                  </Typography>
                 </Link>
+
               </Box>
 
               <Box>
-                <Typography
-                  sx={{ ...styles.smallTextBold }}
-                  display="inline"
-                >
+
+                <Typography sx={{ ...styles.smallTextBold }} display="inline" >
                   telegram:&nbsp;
                 </Typography>
+
                 <Link href={`https://t.me/Arboniashopbot`}>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    // onClick={() => trackEvent("telegram_click")}
-                  >
-                    <Typography
-                      sx={{ ...styles.standardTextLink }}
-                      display="inline"
-                    >
-                      @Arboniashopbot
-                    </Typography>
-                  </a>
+                  <Typography sx={{ ...styles.standardTextLink }} display="inline" >
+                    @Arboniashopbot
+                  </Typography>
                 </Link>
+
               </Box>
+              
             </Grid>
           </Grid>
         </Box>
+
+
         <Box marginY="30px">
           <Divider />
         </Box>
+
         <Box>
-          <Typography
-            variant="h5"
-            component="h2"
-          >
+          <iframe style={{ width: '100%', border: 'none', height: '500px' }}
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104971.25940655338!2d12.908647305941244!3d49.74513818698379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a9a93dc7d9863%3A0x7e4711aedffa7546!2zU3TFmcOtYnJvLCAzNDkgMDEgU3TFmcOtYnJvLCBDemVjaGlh!5e0!3m2!1sen!2srs!4v1713897412851!5m2!1sen!2srs'
+            allowFullScreen
+            loading='lazy'
+            referrerPolicy='no-referrer-when-downgrade'
+          ></iframe>
+        </Box>
+
+
+
+        <Box sx={{ marginTop: '20px' }}>
+          <Typography variant="h5" component="h2" >
             Юридическая информация
           </Typography>
           <Box marginTop="20px">

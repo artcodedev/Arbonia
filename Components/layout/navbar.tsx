@@ -63,11 +63,6 @@ export const MenuItem: MenuItemData[] = [
 		icon: <SmsIcon />
 	},
 	{
-		title: 'Информация',
-		path: '/articles', 
-		icon: <SmsIcon />
-	},
-	{
 		title: 'Новости',
 		path: '/news',
 		icon: <SmsIcon />

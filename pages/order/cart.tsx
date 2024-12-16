@@ -12,8 +12,6 @@ import getConnectionsData from "../../api_utils/getConnectionsData";
 import getColorsData from "../../api_utils/getColorsData";
 import useGetCartItemsExtended from "../../hooks/useGetCartItemsExtended";
 
-// import { ShoppingCartContext } from "../../contexts/shoppingCartContext";
-
 import { ColorOrigin } from "../../models/colorOrigin.model";
 import { ConnectionOrigin } from "../../models/connectionOrigin.model";
 import { ModelOrigin } from "../../models/modelOrigin.model";
