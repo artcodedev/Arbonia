@@ -4,11 +4,11 @@ import { useState } from 'react'
 
 import { Box, Divider, Tab, Tabs, Typography } from '@mui/material'
 
-import PageHeader from '../../../components/pageHeader/pageHeader'
-import DownloadsBlock from '../../../components/pageModels/downloadsBlock'
-import ImagesOtherList from '../../../components/pageModels/imagesOtherList'
-import RadiatorInfo from '../../../components/pageRadiator/radiatorInfo'
-import PageTitle from '../../../components/pageTitle/pageTitle'
+import PageHeader from '../../../Components/pageHeader/pageHeader'
+import DownloadsBlock from '../../../Components/pageModels/downloadsBlock'
+import ImagesOtherList from '../../../Components/pageModels/imagesOtherList'
+import RadiatorInfo from '../../../Components/pageRadiator/radiatorInfo'
+import PageTitle from '../../../Components/pageTitle/pageTitle'
 
 import getColorsData from '../../../api_utils/getColorsData'
 import getConnectionsData from '../../../api_utils/getConnectionsData'
@@ -18,7 +18,7 @@ import { ColorOrigin } from '../../../models/colorOrigin.model'
 import { ConnectionOrigin } from '../../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../../models/modelOrigin.model'
 
-import GeneralTextAboutArboniaProps from '../../../components/generalTextAboutArbonia'
+import GeneralTextAboutArboniaProps from '../../../Components/generalTextAboutArbonia'
 import global from '../../../variables/global'
 
 import * as styles from '../../../styles/styles'

@@ -4,9 +4,9 @@ import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import PageTitle from '../../../components/pageTitle/pageTitle'
-import PageHeader from '../../../components/pageHeader/pageHeader'
-import Hero from '../../../components/hero/hero'
+import PageTitle from '../../../Components/pageTitle/pageTitle'
+import PageHeader from '../../../Components/pageHeader/pageHeader'
+import Hero from '../../../Components/hero/hero'
 
 import * as styles from '../../../styles/styles'
 import global from '../../../variables/global'

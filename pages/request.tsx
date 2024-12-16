@@ -4,8 +4,8 @@ import Script from "next/script"
 
 import { Box, Typography, Grid } from "@mui/material"
 
-import PageHeader from "../components/pageHeader/pageHeader"
-import PageTitle from "../components/pageTitle/pageTitle"
+import PageHeader from "../Components/pageHeader/pageHeader"
+import PageTitle from "../Components/pageTitle/pageTitle"
 
 import trackEvent from "../utils/trackEvent"
 

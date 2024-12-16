@@ -10,14 +10,17 @@ type ShoppingCartState = {
 };
 
 type ActionAddItem = { type: "ADD_ITEM"; value: ShoppingCartItem };
+
 type ActionRemoveItem = {
   type: "REMOVE_ITEM";
   value: Omit<ShoppingCartItem, "qnty">;
 };
+
 type ActionSetFetchedItems = {
   type: "SET_FETCHED_ITEMS";
   value: ShoppingCartItem[];
 };
+
 type ActionSetConsoleType = { type: "SET_CONSOLE_TYPE"; value: ConsoleType };
 type ActionReset = { type: "RESET" };
 

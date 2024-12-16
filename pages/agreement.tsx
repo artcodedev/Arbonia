@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 
 import type { NextPage } from "next";
-import PageHeader from "../components/pageHeader/pageHeader";
+import PageHeader from "../Components/pageHeader/pageHeader";
 
 import * as styles from "../styles/styles";
 import global from "../variables/global";

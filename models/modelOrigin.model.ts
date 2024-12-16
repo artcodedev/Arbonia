@@ -23,9 +23,9 @@ type ModelOrigin = {
   connection?: string;
   inStockSections?: string;
 
-  exponentN: string; // Экспонента n
-  weightSection: string; //Вес (без воды) М кг / секцию
-  sectionsMax: string; // Максимальное число секций
+  exponentN: string; 
+  weightSection: string; 
+  sectionsMax: string;
 };
 
 export type { ModelOrigin };

@@ -4,7 +4,6 @@ type ConnectionOrigin = {
   nameShort: string;
   description: string;
   cost: string;
-
   img: string;
 };
 

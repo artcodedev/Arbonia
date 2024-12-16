@@ -4,9 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import Hero from '../../../components/hero/hero'
-import PageHeader from '../../../components/pageHeader/pageHeader'
-import PageTitle from '../../../components/pageTitle/pageTitle'
+import Hero from '../../../Components/hero/hero'
+import PageHeader from '../../../Components/pageHeader/pageHeader'
+import PageTitle from '../../../Components/pageTitle/pageTitle'
 
 import * as styles from '../../../styles/styles'
 import global from '../../../variables/global'

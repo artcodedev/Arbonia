@@ -3,19 +3,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 
-import Hero from '../../components/hero/hero'
-import ModelBlock from '../../components/modelBlock/modelBlock'
-import PageHeader from '../../components/pageHeader/pageHeader'
+import Hero from '../../Components/hero/hero'
+import ModelBlock from '../../Components/modelBlock/modelBlock'
+import PageHeader from '../../Components/pageHeader/pageHeader'
 
 import { SetComponentProps } from '../../models/setComponentProps.model'
 
 import getColorsData from '../../api_utils/getColorsData'
 import getConnectionsData from '../../api_utils/getConnectionsData'
 import getModelsData from '../../api_utils/getModelsData'
-import DownloadsBlock from '../../components/pageModels/downloadsBlock'
-import ImagesOtherList from '../../components/pageModels/imagesOtherList'
-import RadiatorAllOptions from '../../components/pageModels/radiatorAllOptions'
-import RadiatorInCartList from '../../components/pageModels/radiatorInCartList'
+import DownloadsBlock from '../../Components/pageModels/downloadsBlock'
+import ImagesOtherList from '../../Components/pageModels/imagesOtherList'
+import RadiatorAllOptions from '../../Components/pageModels/radiatorAllOptions'
+import RadiatorInCartList from '../../Components/pageModels/radiatorInCartList'
 import { ColorOrigin } from '../../models/colorOrigin.model'
 import { ConnectionOrigin } from '../../models/connectionOrigin.model'
 import { ModelOrigin } from '../../models/modelOrigin.model'
@@ -38,22 +38,14 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 	if (!model) return null
 
 	return (
-		<Box
-			itemScope
-			itemType='https://schema.org/ProductModel'
-		>
-			<meta
-				itemProp='name'
-				content='Arbonia 2180'
-			/>
-			<meta
-				itemProp='countryOfOrigin'
-				content='Чехия'
-			/>
-			<meta
-				itemProp='material'
-				content='Сталь'
-			/>
+		<Box itemScope itemType='https://schema.org/ProductModel' >
+
+			<meta itemProp='name' content='Arbonia 2180'/>
+
+			<meta itemProp='countryOfOrigin' content='Чехия'/>
+
+			<meta itemProp='material' content='Сталь'/>
+
 			<PageHeader
 				title={'Радиаторы Arbonia 2180 | Выгодные цены | Гарантия'}
 				description='Вертикальные радиаторы Arbonia 2180 в наличии (2-трубчатые). Большой выбор моделей. 🛡️ Официальная гарантия 10 лет. 🚚 Доставка в любой город России.'
@@ -181,21 +173,14 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 				</Box>
 
 				{/* 2180 белый*/}
-				<Box
-					marginTop='40px'
-					ref={ref9016}
-				>
+				<Box marginTop='40px' ref={ref9016}>
+
 					<Typography sx={{ ...styles.standardText }}>
 						<h2>Arbonia 2180 в классическом белом цвете</h2>
-						<Grid
-							container
-							spacing={2}
-						>
-							<Grid
-								item
-								xs={12}
-								md={5}
-							>
+
+						<Grid container spacing={2}>
+
+							<Grid item xs={12} md={5}>
 								<img
 									itemProp='image'
 									src='/images/models/2180-1.jpeg'
@@ -205,11 +190,7 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									// height={600}
 								/>
 							</Grid>
-							<Grid
-								item
-								xs={12}
-								md={7}
-							>
+							<Grid item xs={12} md={7} >
 								<p>
 									Белый свет по прежнему остается наиболее актуальным и востребованным, когда речь идет о радиаторах
 									отопления. Ведь это самый нейтральный цвет. Он легко сочетается с любой цветовой схемой помещения.
@@ -235,15 +216,8 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 							connection={connections.find(x => x.id === '12-34') || connections[0]}
 						/>
 						<h3 style={{ marginTop: '40px' }}>Нижнее подключение №69 ТВВ</h3>
-						<Grid
-							container
-							spacing={2}
-						>
-							<Grid
-								item
-								xs={12}
-								md={4}
-							>
+						<Grid container spacing={2}>
+							<Grid item xs={12} md={4}>
 								<img
 									src='/images/models/2180-tvv.jpeg'
 									alt='Белый радиатор Arbonia 2180 69 ТВВ'
@@ -253,11 +227,8 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 								/>
 							</Grid>
 
-							<Grid
-								item
-								xs={12}
-								md={8}
-							>
+							<Grid item xs={12} md={8}>
+
 								<p>
 									Хотя боковое подключение можно использовать и при современной разводке труб по полу, часто оно
 									является не целесообразным и использование радиаторов с нижним подключением является более
@@ -269,16 +240,14 @@ const Model2180: React.FC<SetComponentProps> = ({ models, colors, connections }:
 									можно просто развернуть нужной стороной. Важно помнить, что подача воды всегда осуществляется в
 									крайнюю секцию. В нашем сообществе Вконтакте есть кроткая заметка о том, как&#160;
 									<Link href='https://vk.com/lovehomekomfort?w=wall-86767719_2238'>
-										<a
-											style={{ textDecoration: 'none' }}
-											rel='nofollow'
-										>
-											<Typography
-												sx={{ ...styles.standardTextRedLink }}
-												component='span'
-											>
+
+										<a style={{ textDecoration: 'none' }} rel='nofollow' >
+											<Typography sx={{ ...styles.standardTextRedLink }} component='span'>
+
 												лучше подключать радиаторы с нижним подключением
+
 											</Typography>
+
 										</a>
 									</Link>
 									.

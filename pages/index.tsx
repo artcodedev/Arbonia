@@ -4,26 +4,31 @@ import type { NextPage } from 'next'
 import getColorsData from '../api_utils/getColorsData'
 import getConnectionsData from '../api_utils/getConnectionsData'
 import getModelsData from '../api_utils/getModelsData'
-import BlockHowReadModel from '../components/blockHowReadModel/blockHowReadModel'
-import PageHeader from '../components/pageHeader/pageHeader'
-import AboutArbonia from '../components/pageMain/aboutArbonia'
-import AboutManufacturer from '../components/pageMain/aboutManufacturer'
-import Advantages from '../components/pageMain/advantages'
-import { AllModels } from '../components/pageMain/allModels'
-import Bestsellers from '../components/pageMain/bestsellers'
-import { InStockModels } from '../components/pageMain/inStockModels'
-import Portfolio from '../components/pageMain/portfolio'
-import WhyMouseLite from '../components/pageMain/whyMouseLite'
-import PageTitle from '../components/pageTitle/pageTitle'
+import BlockHowReadModel from '../Components/blockHowReadModel/blockHowReadModel'
+import PageHeader from '../Components/pageHeader/pageHeader'
+import AboutArbonia from '../Components/pageMain/aboutArbonia'
+import AboutManufacturer from '../Components/pageMain/aboutManufacturer'
+import Advantages from '../Components/pageMain/advantages'
+import { AllModels } from '../Components/pageMain/allModels'
+import Bestsellers from '../Components/pageMain/bestsellers'
+import { InStockModels } from '../Components/pageMain/inStockModels'
+import Portfolio from '../Components/pageMain/portfolio'
+import WhyMouseLite from '../Components/pageMain/whyMouseLite'
+import PageTitle from '../Components/pageTitle/pageTitle'
 import { ColorOrigin } from '../models/colorOrigin.model'
 import { ConnectionOrigin } from '../models/connectionOrigin.model'
 import { ModelOrigin } from '../models/modelOrigin.model'
+
+import MainSlider from '../Components/mainslider/slider'
+import Hero from '../Components/hero/hero'
 
 type Props = {
 	models: ModelOrigin[]
 	colors: ColorOrigin[]
 	connections: ConnectionOrigin[]
 }
+
+const paddingX = { xs: '10px', md: '20px' }
 
 const Home: NextPage<Props> = (props: Props) => {
 	return (
@@ -45,80 +50,66 @@ const Home: NextPage<Props> = (props: Props) => {
 				subheader={'Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ.'}
 			/> */}
 			<Box>
-				<Typography
-					variant='h4'
-					component={'h1'}
-					align='center'
-					sx={{ marginTop: '50px' }}
-				>
+
+				<Typography variant='h4' component={'h1'} align='center' sx={{ marginTop: '50px' }} >
 					Трубчатые радиаторы <span style={{ color: '#EF7D00', fontWeight: 600 }}>Arbonia</span>
 				</Typography>
+
 				<Typography style={{ fontSize: '0.8rem', textAlign: 'center', opacity: 0.9 }}>
 					Полный ассортимент стальных трубчатых радиаторов. В наличии и под заказ
 				</Typography>
+
 			</Box>
 
+			<Box sx={{marginTop: '50px', marginBottom: '50px'}}>
+				<MainSlider />
+			</Box>
+
+
+
+
+
+
+
 			<Box>
-				<Box
-					marginTop='50px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+				<Box marginTop='50px' paddingX={paddingX} >
 					<Bestsellers {...props} />
 				</Box>
 
 				<Box marginTop='50px' paddingX={{ xs: '10px', md: '40px' }}>
 					<InStockModels />
+
 					<Box marginTop='30px'>
 						<BlockHowReadModel />
 					</Box>
+
 				</Box>
 
-				<Box
-					marginTop='50px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+				<Box marginTop='50px' paddingX={paddingX } >
 					<AboutArbonia />
 				</Box>
 
-				<Box
-					marginTop='40px'
-					paddingY='40px'
-					sx={{ backgroundColor: '#e6e6e6' }}
-				>
-					<Box paddingX={{ xs: '10px', md: '20px' }}>
+				<Box marginTop='40px' paddingY='40px' sx={{ backgroundColor: '#e6e6e6' }}>
+					<Box paddingX={paddingX }>
 						<WhyMouseLite />
 					</Box>
 				</Box>
 
-				<Box
-					marginTop='50px'
-					paddingX={{ xs: '20px', md: '30px' }}
-				>
+				<Box marginTop='50px' paddingX={{ xs: '20px', md: '30px' }} >
 					<Advantages />
 				</Box>
 
-				<Box
-					marginTop='40px'
-					paddingY='40px'
-				>
+				<Box marginTop='40px' paddingY='40px' >
 					<Box paddingX={{ xs: '20px', md: '20px' }}>
 						<AboutManufacturer />
 					</Box>
 				</Box>
 
-				<Box
-					id='all-models'
-					marginTop='-100px'
-					paddingTop='50px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+				<Box id='all-models' marginTop='-100px' paddingTop='50px' paddingX={paddingX} >
 					<AllModels models={props.models} />
 				</Box>
 
-				<Box
-					marginTop='40px'
-					paddingX={{ xs: '10px', md: '20px' }}
-				>
+				<Box marginTop='40px' paddingX={paddingX} >
 					<Portfolio />
 				</Box>
 			</Box>

@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Box, Grid, Typography } from "@mui/material";
 
-import PageHeader from "../../components/pageHeader/pageHeader";
-import Hero from "../../components/hero/hero";
+import PageHeader from "../../Components/pageHeader/pageHeader";
+import Hero from "../../Components/hero/hero";
 
 import { SetComponentProps } from "../../models/setComponentProps.model";
 
@@ -16,12 +16,12 @@ import { ConnectionOrigin } from "../../models/connectionOrigin.model";
 import getColorsData from "../../api_utils/getColorsData";
 import getConnectionsData from "../../api_utils/getConnectionsData";
 
-import ImagesOtherList from "../../components/pageModels/imagesOtherList";
-import DownloadsBlock from "../../components/pageModels/downloadsBlock";
+import ImagesOtherList from "../../Components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../Components/pageModels/downloadsBlock";
 import { CurrencyContext } from "../../contexts/currencyContext";
 import calcRadiatorCost from "../../utils/calcRadiatorCost";
 import getRadiatorData from "../../utils/getRadiatorData";
-import AddToCartButton from "../../components/addToCartButton/addToCartButton";
+import AddToCartButton from "../../Components/addToCartButton/addToCartButton";
 
 import * as styles from "../../styles/styles";
 import global from "../../variables/global";

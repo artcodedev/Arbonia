@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import { Box, Typography, Grid, Divider } from "@mui/material";
 
-import PageHeader from "../components/pageHeader/pageHeader";
-import PageTitle from "../components/pageTitle/pageTitle";
-import Hero from "../components/hero/hero";
+import PageHeader from "../Components/pageHeader/pageHeader";
+import PageTitle from "../Components/pageTitle/pageTitle";
+import Hero from "../Components/hero/hero";
 
 import trackEvent from "../utils/trackEvent";
 

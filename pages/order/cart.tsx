@@ -2,10 +2,10 @@ import { NextPage } from "next";
 import { useContext } from "react";
 import { Box, Typography } from "@mui/material";
 
-import CartItemList from "../../components/pageCart/carItemList";
-import CartOrderData from "../../components/pageCart/cartOrderData";
-import EmptyCartMessage from "../../components/pageCart/emptyCartMessage";
-import PageHeader from "../../components/pageHeader/pageHeader";
+import CartItemList from "../../Components/pageCart/carItemList";
+import CartOrderData from "../../Components/pageCart/cartOrderData";
+import EmptyCartMessage from "../../Components/pageCart/emptyCartMessage";
+import PageHeader from "../../Components/pageHeader/pageHeader";
 
 import getModelsData from "../../api_utils/getModelsData";
 import getConnectionsData from "../../api_utils/getConnectionsData";

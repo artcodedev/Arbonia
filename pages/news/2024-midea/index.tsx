@@ -3,8 +3,8 @@ import { NextPage } from 'next'
 
 import React from 'react'
 
-import PageHeader from '../../../components/pageHeader/pageHeader'
-import PageTitle from '../../../components/pageTitle/pageTitle'
+import PageHeader from '../../../Components/pageHeader/pageHeader'
+import PageTitle from '../../../Components/pageTitle/pageTitle'
 
 import * as styles from '../../../styles/styles'
 import global from '../../../variables/global'

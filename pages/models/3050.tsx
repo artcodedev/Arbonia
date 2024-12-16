@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Box, Grid, Typography } from "@mui/material";
 
-import ModelBlock from "../../components/modelBlock/modelBlock";
-import PageHeader from "../../components/pageHeader/pageHeader";
-import Hero from "../../components/hero/hero";
+import ModelBlock from "../../Components/modelBlock/modelBlock";
+import PageHeader from "../../Components/pageHeader/pageHeader";
+import Hero from "../../Components/hero/hero";
 
 import { SetComponentProps } from "../../models/setComponentProps.model";
 
@@ -17,10 +17,10 @@ import { ModelOrigin } from "../../models/modelOrigin.model";
 import { ConnectionOrigin } from "../../models/connectionOrigin.model";
 import getColorsData from "../../api_utils/getColorsData";
 import getConnectionsData from "../../api_utils/getConnectionsData";
-import RadiatorInCartList from "../../components/pageModels/radiatorInCartList";
-import RadiatorAllOptions from "../../components/pageModels/radiatorAllOptions";
-import ImagesOtherList from "../../components/pageModels/imagesOtherList";
-import DownloadsBlock from "../../components/pageModels/downloadsBlock";
+import RadiatorInCartList from "../../Components/pageModels/radiatorInCartList";
+import RadiatorAllOptions from "../../Components/pageModels/radiatorAllOptions";
+import ImagesOtherList from "../../Components/pageModels/imagesOtherList";
+import DownloadsBlock from "../../Components/pageModels/downloadsBlock";
 
 type Props = {
   models: ModelOrigin[];

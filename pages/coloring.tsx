@@ -4,8 +4,8 @@ import Script from "next/script";
 
 import { Box, Typography, Grid } from "@mui/material";
 
-import PageHeader from "../components/pageHeader/pageHeader";
-import PageTitle from "../components/pageTitle/pageTitle";
+import PageHeader from "../Components/pageHeader/pageHeader";
+import PageTitle from "../Components/pageTitle/pageTitle";
 
 import trackEvent from "../utils/trackEvent";
 
@@ -13,7 +13,7 @@ import type { NextPage } from "next";
 
 import * as styles from "../styles/styles";
 import global from "../variables/global";
-import Hero from "../components/hero/hero";
+import Hero from "../Components/hero/hero";
 
 type PageRequestProps = {};
 
@@ -23,7 +23,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 
   return (
     <Box>
-      <Script
+      {/* <Script
         id={"ucalc"}
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -32,7 +32,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
                     (function () { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=403860&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();
                     `,
         }}
-      />
+      /> */}
       <PageTitle
         header={"Покраска Arbonia в ваш цвет с гарантией"}
         subheader={"Радиаторы Arbonia любого цвета на ваш выбор"}
