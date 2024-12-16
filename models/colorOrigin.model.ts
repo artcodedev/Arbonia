@@ -5,14 +5,7 @@ type ColorOrigin = {
   baseRate: string;
 
   img: string;
-  group:
-    | "Серийный цвет"
-    | "New Inspiration"
-    | "RAL Classic"
-    | "Серия Metallic"
-    | "Серия Terra"
-    | "Серия Pastell"
-    | "Серия Nature";
+  group: "Серийный цвет" | "New Inspiration" | "RAL Classic" | "Серия Metallic" | "Серия Terra" | "Серия Pastell" | "Серия Nature";
 };
 
 export type { ColorOrigin };

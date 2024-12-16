@@ -1,3 +1,6 @@
+
+
+
 const global: { [key: string]: any } = {
 	phone812String: '(812) 409-38-55',
 	phone812: '+78124093855',
@@ -6,14 +9,14 @@ const global: { [key: string]: any } = {
 	whatsAppString: '+79006522658',
 	whatsApp: '79006522658',
 	pages: [
-		['Главная', '/'],
-		['О магазине', '/about'],
-		['Покраска', '/coloring'],
-		['Доставка и оплата', '/delivery'],
-		['Запрос на радиаторы', '/request'],
-		['Информация', '/articles'],
-		['Новости', '/news'],
-		['Вопрос-Ответ', '/articles/faq'],
+		['Главная', '/', ],
+		['О магазине', '/about', ],
+		['Покраска', '/coloring', ],
+		['Доставка и оплата', '/delivery', ],
+		['Запрос на радиаторы', '/request', ],
+		['Информация', '/articles', ],
+		['Новости', '/news', ],
+		['Вопрос-Ответ', '/articles/faq', ],
 	],
 	website: 'www.arboniashop.ru',
 	email: 'mail@arboniashop.ru',

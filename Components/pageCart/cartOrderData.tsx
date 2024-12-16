@@ -10,7 +10,7 @@ import { OrderData } from "../../models/orderData.model";
 
 import { ShoppingCartContext } from "../../contexts/shoppingCartContext";
 
-import trackEvent from "../../utils/trackEvent";
+// import trackEvent from "../../utils/trackEvent";
 
 import * as styles from "../../styles/styles";
 
@@ -71,7 +71,7 @@ const CartOrderData: React.FC<CartOrderDataProps> = ({ items }) => {
       Object.values(errors).filter((x) => x).length > 0 ? true : false;
     // console.log(isErrors)
     if (isErrors === false) {
-      trackEvent("order_placed");
+      // trackEvent("order_placed");
       const res = await sendOrderConfirmation({
         ...inputData,
         consoleType,

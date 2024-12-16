@@ -90,7 +90,7 @@ const RadiatorList: NextPage<RadiatorListProps> = ({
                 color,
                 connection,
                 currencyRate,
-                sectionQnty,
+                // secQnty,
               });
 
               return (

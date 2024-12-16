@@ -14,13 +14,7 @@ type GetCartItemProps = {
   currencyRate: number;
 };
 
-const getCartItem = ({
-  item,
-  models,
-  colors,
-  connections,
-  currencyRate,
-}: GetCartItemProps): CartItemExtended => {
+const getCartItem = ({ item, models, colors, connections, currencyRate}: GetCartItemProps): CartItemExtended => {
   const model = models.find((x) => x.id === item.modelId);
   const color = colors.find((x) => x.id === item.colorId);
   const connection = connections.find((x) => x.id === item.connectionId);
@@ -39,11 +33,9 @@ const getCartItem = ({
     color,
     connection,
     currencyRate,
-    sectionQnty: item.sectionQnty,
+    secQnty: item.sectionQnty,
   });
-  const title = `${model.name} - ${
-    item.sectionQnty > 9 ? item.sectionQnty : "0" + item.sectionQnty.toString()
-  } сек. / ${connection.name} / ${color.name}`;
+  const title = `${model.name} - ${ item.sectionQnty > 9 ? item.sectionQnty : "0" + item.sectionQnty.toString()} сек. / ${connection.name} / ${color.name}`;
 
   return {
     ...item,

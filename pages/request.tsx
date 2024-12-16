@@ -7,7 +7,7 @@ import { Box, Typography, Grid } from "@mui/material"
 import PageHeader from "../Components/pageHeader/pageHeader"
 import PageTitle from "../Components/pageTitle/pageTitle"
 
-import trackEvent from "../utils/trackEvent"
+// import trackEvent from "../utils/trackEvent"
 
 import type { NextPage } from "next"
 
@@ -85,7 +85,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
               <Link href={`tel:${global.phone495}`}>
                 <a
                   style={{ textDecoration: "none" }}
-                  onClick={() => trackEvent("phone_click")}
+                  // onClick={() => trackEvent("phone_click")}
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink, color: "white" }}
@@ -111,7 +111,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
               <Link href={`tel:${global.phone812}`}>
                 <a
                   style={{ textDecoration: "none" }}
-                  onClick={() => trackEvent("phone_click")}
+                  // onClick={() => trackEvent("phone_click")}
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink, color: "white" }}
@@ -137,7 +137,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
               <Link href={`mailto:${global.email}`}>
                 <a
                   style={{ textDecoration: "none" }}
-                  onClick={() => trackEvent("email_click")}
+                  // onClick={() => trackEvent("email_click")}
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink, color: "white" }}
@@ -163,7 +163,7 @@ const PageRequest: NextPage<PageRequestProps> = () => {
               <Link href={`https://wa.me/${global.whatsApp}`}>
                 <a
                   style={{ textDecoration: "none" }}
-                  onClick={() => trackEvent("whatsapp_click")}
+                  // onClick={() => trackEvent("whatsapp_click")}
                 >
                   <Typography
                     sx={{ ...styles.standardTextLink, color: "white" }}

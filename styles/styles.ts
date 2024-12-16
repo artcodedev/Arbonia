@@ -1,3 +1,5 @@
+import zIndex from "@mui/material/styles/zIndex";
+
 export const standardText = {
   fontSize: '14px',
   fontWeight: '500',
@@ -146,3 +148,13 @@ export const roundSquareImage = {
 };
 
 export const iframeContainer = {};
+
+
+export const navbar = {
+  boxShadow: '0 0 10px #dbdbdb',
+  position: 'fixed',
+  top: '0px',
+  zIndex: '10',
+  background: '#f0f8ff30',
+  backdropFilter: 'blur(20px)'
+}

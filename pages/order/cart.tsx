@@ -12,7 +12,7 @@ import getConnectionsData from "../../api_utils/getConnectionsData";
 import getColorsData from "../../api_utils/getColorsData";
 import useGetCartItemsExtended from "../../hooks/useGetCartItemsExtended";
 
-import { ShoppingCartContext } from "../../contexts/shoppingCartContext";
+// import { ShoppingCartContext } from "../../contexts/shoppingCartContext";
 
 import { ColorOrigin } from "../../models/colorOrigin.model";
 import { ConnectionOrigin } from "../../models/connectionOrigin.model";
@@ -33,16 +33,13 @@ const CartPage: NextPage<CartPageProps> = ({ models, colors, connections }) => {
     <Box sx={{ ...global.pagePadding }}>
       <PageHeader title={"Коризна покупок"} />
       <Box paddingTop="20px">
-        <Typography
-          variant="h4"
-          component="h1"
-          gutterBottom
-          textAlign="center"
-          sx={{ textTransform: "uppercase" }}
-        >
+
+        <Typography variant="h4" component="h1" gutterBottom textAlign="center" sx={{ textTransform: "uppercase" }}>
           Корзина
         </Typography>
+
         {items.length === 0 && <EmptyCartMessage />}
+
         {items.length !== 0 && (
           <Box paddingTop="30px">
             <CartItemList items={items} />

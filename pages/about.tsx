@@ -6,7 +6,7 @@ import PageHeader from "../Components/pageHeader/pageHeader";
 import PageTitle from "../Components/pageTitle/pageTitle";
 import Hero from "../Components/hero/hero";
 
-import trackEvent from "../utils/trackEvent";
+// import trackEvent from "../utils/trackEvent";
 
 import * as styles from "../styles/styles";
 import global from "../variables/global";
@@ -16,6 +16,8 @@ type PageAboutProps = {};
 const PageAbout: NextPage<PageAboutProps> = () => {
   return (
     <Box>
+
+      
       <PageTitle
         header={"Специализированный магазин Arbonia в России"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
@@ -101,7 +103,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 <Link href={`tel:${global.phone495}`}>
                   <a
                     style={{ textDecoration: "none" }}
-                    onClick={() => trackEvent("phone_click")}
+                    // onClick={() => trackEvent("phone_click")}
                   >
                     <Typography
                       sx={{ ...styles.standardTextLink }}
@@ -121,7 +123,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 <Link href={`tel:${global.phone812}`}>
                   <a
                     style={{ textDecoration: "none" }}
-                    onClick={() => trackEvent("phone_click")}
+                    // onClick={() => trackEvent("phone_click")}
                   >
                     <Typography
                       sx={{ ...styles.standardTextLink }}
@@ -142,7 +144,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 <Link href={`mailto:${global.email}`}>
                   <a
                     style={{ textDecoration: "none" }}
-                    onClick={() => trackEvent("email_click")}
+                    // onClick={() => trackEvent("email_click")}
                   >
                     <Typography
                       sx={{ ...styles.standardTextLink }}
@@ -164,7 +166,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 <Link href={`https://wa.me/${global.whatsApp}`}>
                   <a
                     style={{ textDecoration: "none" }}
-                    onClick={() => trackEvent("whatsapp_click")}
+                    // onClick={() => trackEvent("whatsapp_click")}
                   >
                     <Typography
                       sx={{ ...styles.standardTextLink }}
@@ -186,7 +188,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 <Link href={`https://t.me/Arboniashopbot`}>
                   <a
                     style={{ textDecoration: "none" }}
-                    onClick={() => trackEvent("telegram_click")}
+                    // onClick={() => trackEvent("telegram_click")}
                   >
                     <Typography
                       sx={{ ...styles.standardTextLink }}
