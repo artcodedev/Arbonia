@@ -1,23 +1,12 @@
 import { NextComponentType } from 'next'
 import React, { useState } from 'react'
-
-import Image from 'next/image'
 import Link from 'next/link'
-
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import MenuIcon from '@mui/icons-material/Menu'
-import { AppBar, Box, Hidden, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material'
 import Container from '@mui/material/Container'
-
 import Drawer from '@mui/material/Drawer';
-
-// import trackEvent from '../../utils/trackEvent'
-
 import * as styles from '../../styles/styles'
-import { menuButton, menuButtonDropDown } from '../../styles/stylesNavbarFooter'
 import global from '../../variables/global'
-
-
 import PaidIcon from '@mui/icons-material/Paid';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SmsIcon from '@mui/icons-material/Sms';

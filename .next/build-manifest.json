@@ -29,11 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/coloring.js"
-    ],
-    "/news/2023-design": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/news/2023-design.js"
     ]
   },
   "ampFirstPages": []
