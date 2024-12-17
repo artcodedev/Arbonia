@@ -10,6 +10,7 @@ import Hero from "../Components/hero/hero";
 
 import * as styles from "../styles/styles";
 import global from "../variables/global";
+import Script from "next/script";
 
 type PageAboutProps = {};
 
@@ -143,7 +144,7 @@ const PageAbout: NextPage<PageAboutProps> = () => {
                 </Link>
 
               </Box>
-              
+
             </Grid>
           </Grid>
         </Box>
@@ -160,6 +161,22 @@ const PageAbout: NextPage<PageAboutProps> = () => {
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
           ></iframe>
+        </Box>
+
+        <Box>
+          <Script
+            id={"ucalc"}
+            dangerouslySetInnerHTML={{
+              __html: `
+                    var widgetOptions403860 = { bg_color: "transparent" }; 
+                    (function () { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=403860&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();
+                    `,
+            }}
+          />
+
+          <Box marginTop="50px">
+            <div className="uCalc_403860"></div>
+          </Box>
         </Box>
 
 

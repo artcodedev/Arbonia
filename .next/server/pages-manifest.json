@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/articles/faq": "pages/articles/faq.js",
-  "/request": "pages/request.js",
-  "/news": "pages/news.js"
+  "/news/2023-design": "pages/news/2023-design.js",
+  "/coloring": "pages/coloring.js"
 }

@@ -16,7 +16,6 @@ import { CurrencyContext } from '../../contexts/currencyContext'
 import { initialState, reducer, ShoppingCartContext } from '../../contexts/shoppingCartContext'
 
 import useGetCurrency from '../../api_utils/useGetCurrency'
-// import { trackPage } from '../../utils/trackEvent'
 
 type LayoutProps = ReactElement
 
@@ -31,7 +30,6 @@ const Layout: NextComponentType<LayoutProps> = ({ children }) => {
 		const newPath = router.asPath.split('#')[0]
 		if (pageUrl === newPath) return
 		setPageUrl(newPath)
-		// trackPage(newPath)
 	}, [router.asPath])
 
 	return (

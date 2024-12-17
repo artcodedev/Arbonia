@@ -25,20 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/articles/faq": [
+    "/coloring": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/articles/faq.js"
+      "static/chunks/pages/coloring.js"
     ],
-    "/news": [
+    "/news/2023-design": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/news.js"
-    ],
-    "/request": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/request.js"
+      "static/chunks/pages/news/2023-design.js"
     ]
   },
   "ampFirstPages": []

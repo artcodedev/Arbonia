@@ -69,7 +69,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
                 model,
                 color,
                 connection,
-                sectionQnty: +sectionQnty,
+                secQnty: +sectionQnty,
                 currencyRate: rateEuro,
               });
               const imagePrimaryPath =

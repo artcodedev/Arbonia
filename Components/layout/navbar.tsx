@@ -103,9 +103,9 @@ const Navbar: NextComponentType<NavbarProps> = () => {
 	return (
 
 		<>
-			<Drawer open={openDrawer} onClose={toggleDrawer(false)}>
+			<Drawer open={openDrawer} onClose={toggleDrawer(false)} sx={{background: '#f000', backdropFilter: 'blur(30px)'}}>
 
-				<Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+				<Box sx={{ width: 250}} role="presentation" onClick={toggleDrawer(false)}>
 
 					<List>
 

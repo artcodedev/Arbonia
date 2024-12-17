@@ -9,6 +9,9 @@ import PageTitle from "../Components/pageTitle/pageTitle"
 
 // import trackEvent from "../utils/trackEvent"
 
+import PanelContacts from "../Components/panelContacts/PanelContacts"
+import WidgetRequest from "../Components/Widget/WidgetRequest"
+
 import type { NextPage } from "next"
 
 import * as styles from "../styles/styles"
@@ -22,16 +25,16 @@ const PageRequest: NextPage<PageRequestProps> = () => {
 
   return (
     <Box>
-      <Script
+      {/* <Script
         id={"ucalc"}
-        strategy="lazyOnload"
+        // strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `
                     var widgetOptions403860 = { bg_color: "transparent" }; 
                     (function () { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=403860&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();
                     `,
         }}
-      />
+      /> */}
       <PageTitle
         header={"Специализированный магазин Arbonia в России"}
         subheader={"Доставка со складов в Москве и Санкт-Петербурге"}
@@ -60,122 +63,10 @@ const PageRequest: NextPage<PageRequestProps> = () => {
           Если вам требуется консультация, расчет или подбор радиаторов по
           проекту,то свяжитесь с нами любым удобным вам способом.
         </Typography>
-        <Box
-          marginY="20px"
-          padding="10px"
-          sx={{ backgroundColor: "#333333", borderRadius: "10px" }}
-        >
-          <Grid
-            container
-            spacing={2}
-            alignItems={"center"}
-          >
-            <Grid
-              item
-              xs={12}
-              sm={4}
-              textAlign="center"
-            >
-              <Typography
-                sx={{ ...styles.smallText, color: "#e6e6e6" }}
-                display="inline"
-              >
-                тел.:&ensp;
-              </Typography>
-              <Link href={`tel:${global.phone495}`}>
-                <a
-                  style={{ textDecoration: "none" }}
-                  // onClick={() => trackEvent("phone_click")}
-                >
-                  <Typography
-                    sx={{ ...styles.standardTextLink, color: "white" }}
-                    display="inline"
-                  >
-                    {global.phone495String}
-                  </Typography>
-                </a>
-              </Link>
-              <Typography
-                sx={{ ...styles.standardText, color: "white" }}
-                display="inline"
-              >
-                <br />
-                <Typography
-                  sx={{ ...styles.smallText, color: "#333333" }}
-                  display="inline"
-                  component="span"
-                >
-                  тел.:&ensp;
-                </Typography>
-              </Typography>
-              <Link href={`tel:${global.phone812}`}>
-                <a
-                  style={{ textDecoration: "none" }}
-                  // onClick={() => trackEvent("phone_click")}
-                >
-                  <Typography
-                    sx={{ ...styles.standardTextLink, color: "white" }}
-                    display="inline"
-                  >
-                    {global.phone812String}
-                  </Typography>
-                </a>
-              </Link>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={4}
-              textAlign="center"
-            >
-              <Typography
-                sx={{ ...styles.smallText, color: "#e6e6e6" }}
-                display="inline"
-              >
-                email:&ensp;
-              </Typography>
-              <Link href={`mailto:${global.email}`}>
-                <a
-                  style={{ textDecoration: "none" }}
-                  // onClick={() => trackEvent("email_click")}
-                >
-                  <Typography
-                    sx={{ ...styles.standardTextLink, color: "white" }}
-                    display="inline"
-                  >
-                    {global.email}
-                  </Typography>
-                </a>
-              </Link>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={4}
-              textAlign="center"
-            >
-              <Typography
-                sx={{ ...styles.smallText, color: "#e6e6e6" }}
-                display="inline"
-              >
-                whatsapp:&ensp;
-              </Typography>
-              <Link href={`https://wa.me/${global.whatsApp}`}>
-                <a
-                  style={{ textDecoration: "none" }}
-                  // onClick={() => trackEvent("whatsapp_click")}
-                >
-                  <Typography
-                    sx={{ ...styles.standardTextLink, color: "white" }}
-                    display="inline"
-                  >
-                    {global.whatsAppString}
-                  </Typography>
-                </a>
-              </Link>
-            </Grid>
-          </Grid>
-        </Box>
+
+        <PanelContacts />
+
+
         <Typography
           sx={{ ...styles.standardText }}
           textAlign="center"
@@ -231,9 +122,8 @@ const PageRequest: NextPage<PageRequestProps> = () => {
           </Box>
         )}
 
-        <Box marginTop="50px">
-          <div className="uCalc_403860"></div>
-        </Box>
+        <WidgetRequest />
+
       </Box>
     </Box>
   )
